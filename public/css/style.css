@@ -1,0 +1,1678 @@
+.wrap {
+    display: block;
+    min-width: 990px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#header {
+    background-color: black;
+    height: 170px;
+    width: 100%;
+    position: relative;
+}
+
+#main_container {
+    min-width: 990px;
+}
+
+#plan_filter {
+    background-color: #141414;
+    height: 130px;
+    text-align: center;
+    padding: 8px 0 0 0;
+    position: relative;
+}
+
+.responsive_select {
+    min-width: 100%;
+    max-width: 100%;
+    height: 52px;
+}
+
+.plan_search, .small_select, .big_select {
+    display: inline-block;
+    margin-top: 0rem;
+    padding: 0 2rem 0 0;
+}
+
+.plan_holder{
+    position: relative;
+    z-index: 2;
+    touch-action: none;
+    overflow: hidden;
+}
+
+#plan_canvas {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    touch-action: none;
+    min-height: 991px;
+    transform-origin: 0px 0px;
+    transform: scale(1) translate(0px, 0px);
+    cursor: grab;
+}
+
+.plan_popup {
+    position: absolute;
+    z-index: 3;
+}
+
+#plan_bullets {
+    position: relative;
+    z-index: 3;
+}
+
+/* Elements styles */
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 1%;
+    margin: 10px 0 0 0;
+}
+
+#clock {
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    color: yellow;
+    font-size: 2rem;
+    position: absolute;
+    left: 45%;
+    top: 25%;
+}
+
+#greetingLT {
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    color: yellow;
+    position: absolute;
+    left: 44.5%;
+    top: 53%;
+}
+
+#greetingEN {
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    color: yellow;
+    position: absolute;
+    left: 43%;
+    top: 53%;
+}
+
+.small_select {
+    width: 10%;
+}
+
+.big_select {
+    width: 20%;
+}
+
+btn btn-primary {
+    padding: 0.375rem 1.75rem;
+}
+
+#language_tag {
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    font-size: 4rem;
+    position: absolute;
+    left: 90%;
+}
+
+.plan {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+/* Bullet points 1st floor */
+
+#pc_bullet {
+    position: absolute;
+    left: 1660px;
+    top: 330px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#pc_second_bullet {
+    position: absolute;
+    left: 320px;
+    top: 440px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#self_service_bullet {
+    position: absolute;
+    left: 380px;
+    top: 560px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#self_service_second_bullet {
+    position: absolute;
+    left: 1724px;
+    top: 454px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#book_takeout_bullet {
+    position: absolute;
+    left: 430px;
+    top: 440px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#book_takeout_second_bullet {
+    position: absolute;
+    left: 1639px;
+    top: 454px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#box_bullet {
+    position: absolute;
+    left: 2130px;
+    top: 751px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#cafe_bullet {
+    position: absolute;
+    left: 350px;
+    top: 200px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#dinner_bullet {
+    position: absolute;
+    left: 1310px;
+    top: 730px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#enter_bullet {
+    position: absolute;
+    left: 230px;
+    top: 366px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#enter_disabled_bullet {
+    position: absolute;
+    left: 940px;
+    top: 80px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#enter_main_bullet {
+    position: absolute;
+    left: 2130px;
+    top: 510px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#cyber_box_room_bullet {
+    position: absolute;
+    left: 40vh;
+    top: 42vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stock_box_room_bullet {
+    position: absolute;
+    left: 51vh;
+    top: 42vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#printing_bullet {
+    position: absolute;
+    left: 61vh;
+    top: 44vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#calc_box_room_bullet {
+    position: absolute;
+    left: 520px;
+    top: 200px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#arch_box_room_bullet {
+    position: absolute;
+    left: 1480px;
+    top: 686px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#volt_box_room_bullet {
+    position: absolute;
+    left: 1730px;
+    top: 686px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stairs_bullet {
+    position: absolute;
+    left: 76.5vh;
+    top: 23vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stairs_second_floor_bullet {
+    position: absolute;
+    left: 71.5vh;
+    top: 40vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stairs_second_floor_second_bullet {
+    position: absolute;
+    left: 145.5vh;
+    top: 55vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#toilet_bullet {
+    position: absolute;
+    left: 87vh;
+    top: 48vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#toilet_disabled_bullet {
+    position: absolute;
+    left: 95vh;
+    top: 48vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#emergency_bullet {
+    position: absolute;
+    left: 68vh;
+    top: 58vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#emergency_main_bullet {
+    position: absolute;
+    left: 2140px;
+    top: 300px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#elevator_disabled_bullet {
+    position: absolute;
+    left: 78vh;
+    top: 40vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#work_place_bullet {
+    position: absolute;
+    left: 111vh;
+    top: 20vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#work_place_second_bullet {
+    position: absolute;
+    left: 111vh;
+    top: 35vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#relax_zone_bullet {
+    position: absolute;
+    left: 103vh;
+    top: 9vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#books_bullet {
+    position: absolute;
+    left: 95vh;
+    top: 25vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#locker_bullet {
+    position: absolute;
+    left: 151vh;
+    top: 22vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#reception_bullet {
+    position: absolute;
+    left: 140vh;
+    top: 35vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Bullet points 2nd floor */
+
+#pc_bullet_second {
+    position: absolute;
+    left: 42vh;
+    top: 22vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stairs_bullet_second {
+    position: absolute;
+    left: 14vh;
+    top: 16vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stairs_second_floor_bullet_second {
+    position: absolute;
+    left: 167vh;
+    top: 26vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stairs_second_floor_second_bullet_second {
+    position: absolute;
+    left: 180vh;
+    top: 45vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#elevator_disabled_bullet_second {
+    position: absolute;
+    left: 25vh;
+    top: 16vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#work_place_bullet_second {
+    position: absolute;
+    left: 61vh;
+    top: 20vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#work_place_second_bullet_second {
+    position: absolute;
+    left: 97vh;
+    top: 20vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#work_place_third_bullet_second {
+    position: absolute;
+    left: 130vh;
+    top: 20vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#work_place_fourth_bullet_second {
+    position: absolute;
+    left: 53vh;
+    top: 39vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#books_bullet_second {
+    position: absolute;
+    left: 109vh;
+    top: 39vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Bullet points 3rd floor */
+
+#engine_box_room_bullet_fourth {
+    position: absolute;
+    left: 103.5vh;
+    top: 34vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#group_room_bullet_fourth {
+    position: absolute;
+    left: 90vh;
+    top: 25vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#group_room_second_bullet_fourth {
+    position: absolute;
+    left: 90vh;
+    top: 32vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#group_room_third_bullet_fourth {
+    position: absolute;
+    left: 113vh;
+    top: 41vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#group_room_fourth_bullet_fourth {
+    position: absolute;
+    left: 121vh;
+    top: 41vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#pc_bullet_fourth {
+    position: absolute;
+    left: 20vh;
+    top: 38vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#pc_work_bullet_fourth {
+    position: absolute;
+    left: 122vh;
+    top: 10vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#projector_bullet_fourth {
+    position: absolute;
+    left: 136vh;
+    top: 42vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#employe_only_bullet_fourth {
+    position: absolute;
+    left: 165vh;
+    top: 42vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#elevator_disabled_bullet_fourth {
+    position: absolute;
+    left: 175vh;
+    top: 9vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#elevator_disabled_second_bullet_fourth {
+    position: absolute;
+    left: 86vh;
+    top: 57vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#relax_zone_bullet_fourth {
+    position: absolute;
+    left: 87vh;
+    top: 10vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#relax_zone_second_bullet_fourth {
+    position: absolute;
+    left: 136vh;
+    top: 31vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#enter_bullet_fourth {
+    position: absolute;
+    left: 14vh;
+    top: 28vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#toilet_bullet_fourth {
+    position: absolute;
+    left: 126.5vh;
+    top: 24vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#toilet_disabled_bullet_fourth {
+    position: absolute;
+    left: 128vh;
+    top: 43vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#vr_room_fourth {
+    position: absolute;
+    left: 25vh;
+    top: 18vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#emergency_bullet_fourth {
+    position: absolute;
+    left: 74vh;
+    top: 56vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#emergency_second_bullet_fourth {
+    position: absolute;
+    left: 173vh;
+    top: 20vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#work_place_bullet_fourth {
+    position: absolute;
+    left: 57.5vh;
+    top: 40vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#work_place_second_bullet_fourth {
+    position: absolute;
+    left: 49vh;
+    top: 13vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#work_place_third_bullet_fourth {
+    position: absolute;
+    left: 119vh;
+    top: 55vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stairs_bullet_fourth {
+    position: absolute;
+    left: 152.5vh;
+    top: 53vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stairs_second_bullet_fourth {
+    position: absolute;
+    left: 158.5vh;
+    top: 16vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stairs_third_bullet_fourth {
+    position: absolute;
+    left: 163.5vh;
+    top: 53vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stairs_fourth_bullet_fourth {
+    position: absolute;
+    left: 88vh;
+    top: 40vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stairs_fifth_bullet_fourth {
+    position: absolute;
+    left: 101.5vh;
+    top: 43vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#books_bullet_fourth {
+    position: absolute;
+    left: 76.5vh;
+    top: 17vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Bullet points 4th floor */
+
+#pc_bullet_third {
+    position: absolute;
+    left: 35vh;
+    top: 49vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stairs_bullet_third {
+    position: absolute;
+    left: 160vh;
+    top: 14vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stairs_second_floor_bullet_third {
+    position: absolute;
+    left: 151vh;
+    top: 53vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stairs_third_floor_bullet_third {
+    position: absolute;
+    left: 45vh;
+    top: 32vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#stairs_fourth_floor_bullet_third {
+    position: absolute;
+    left: 84vh;
+    top: 41vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#elevator_disabled_bullet_third {
+    position: absolute;
+    left: 44vh;
+    top: 59vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#work_place_bullet_third {
+    position: absolute;
+    left: 68vh;
+    top: 32vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#books_bullet_third {
+    position: absolute;
+    left: 24vh;
+    top: 40vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#books_second_bullet_third {
+    position: absolute;
+    left: 24vh;
+    top: 18vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#books_third_bullet_third {
+    position: absolute;
+    left: 44vh;
+    top: 4vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#books_fourth_bullet_third {
+    position: absolute;
+    left: 74vh;
+    top: 4vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#books_fifth_bullet_third {
+    position: absolute;
+    left: 119vh;
+    top: 4vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#books_sixth_bullet_third {
+    position: absolute;
+    left: 142vh;
+    top: 4vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#books_seventh_bullet_third {
+    position: absolute;
+    left: 164vh;
+    top: 4vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#emergency_bullet_third {
+    position: absolute;
+    left: 22vh;
+    top: 58vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#employe_only_bullet_third {
+    position: absolute;
+    left: 158vh;
+    top: 41vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#projector_bullet_third {
+    position: absolute;
+    left: 101vh;
+    top: 36vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#relax_zone_bullet_third {
+    position: absolute;
+    left: 59vh;
+    top: 32vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#relax_zone_second_bullet_third {
+    position: absolute;
+    left: 113vh;
+    top: 34vh;
+    transition: 0.3s;
+    cursor: pointer;
+ }
+
+    /* Blue pointer hover animations */
+
+#pc_bullet:hover {
+    transform: scale(1.1);
+}
+
+#pc_second_bullet:hover {
+    transform: scale(1.1);
+}
+
+#self_service_bullet:hover {
+    transform: scale(1.1);
+}
+
+#self_service_second_bullet:hover {
+    transform: scale(1.1);
+}
+
+#book_takeout_bullet:hover {
+    transform: scale(1.1);
+}
+
+#book_takeout_second_bullet:hover {
+    transform: scale(1.1);
+}
+
+#box_bullet:hover {
+    transform: scale(1.1);
+}
+
+#cafe_bullet:hover {
+    transform: scale(1.1);
+}
+
+#dinner_bullet:hover {
+    transform: scale(1.1);
+}
+
+#printing_bullet:hover {
+    transform: scale(1.1);
+}
+
+#calc_box_room_bullet:hover {
+    transform: scale(1.1);
+}
+
+#arch_box_room_bullet:hover {
+    transform: scale(1.1);
+}
+
+#volt_box_room_bullet:hover {
+    transform: scale(1.1);
+}
+
+#cyber_box_room_bullet:hover {
+    transform: scale(1.1);
+}
+
+#stock_box_room_bullet:hover {
+    transform: scale(1.1);
+}
+
+#books_bullet:hover {
+    transform: scale(1.1);
+}
+
+#locker_bullet:hover {
+    transform: scale(1.1);
+}
+
+#reception_bullet:hover {
+    transform: scale(1.1);
+}
+
+#pc_bullet_second:hover {
+    transform: scale(1.1);
+}
+
+#books_bullet_second:hover {
+    transform: scale(1.1);
+}
+
+#engine_box_room_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#books_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#books_second_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#books_third_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#books_fourth_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#books_fifth_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#books_sixth_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#books_seventh_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#vr_room_fourth:hover {
+    transform: scale(1.1);
+}
+
+#pc_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#pc_work_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#books_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#pc_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#group_room_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#group_room_second_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#group_room_third_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#group_room_fourth_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+    /* Grey pointer hover animations */
+
+#enter_bullet:hover {
+    transform: scale(1.1);
+}
+
+#enter_disabled_bullet:hover {
+    transform: scale(1.1);
+}
+
+#enter_main_bullet:hover{
+    transform: scale(1.1);
+}
+
+#stairs_bullet:hover {
+    transform: scale(1.1);
+}
+
+#stairs_second_floor_bullet:hover {
+    transform: scale(1.1);
+}
+
+#stairs_second_floor_second_bullet:hover {
+    transform: scale(1.1);
+}
+
+#toilet_bullet:hover {
+    transform: scale(1.1);
+}
+
+#toilet_disabled_bullet:hover {
+    transform: scale(1.1);
+}
+
+#elevator_disabled_bullet:hover {
+    transform: scale(1.1);
+}
+
+#work_place_bullet:hover {
+    transform: scale(1.1);
+}
+
+#work_place_second_bullet:hover {
+    transform: scale(1.1);
+}
+
+#relax_zone_bullet:hover {
+    transform: scale(1.1);
+}
+
+#stairs_bullet_second:hover {
+    transform: scale(1.1);
+}
+
+#stairs_second_floor_bullet_second:hover {
+    transform: scale(1.1);
+}
+
+#stairs_second_floor_second_bullet_second:hover {
+    transform: scale(1.1);
+}
+
+#elevator_disabled_bullet_second:hover {
+    transform: scale(1.1);
+}
+
+#work_place_bullet_second:hover {
+    transform: scale(1.1);
+}
+
+#work_place_second_bullet_second:hover {
+    transform: scale(1.1);
+}
+
+#work_place_third_bullet_second:hover {
+    transform: scale(1.1);
+}
+
+#work_place_fourth_bullet_second:hover {
+    transform: scale(1.1);
+}
+
+#projector_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#elevator_disabled_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#elevator_disabled_second_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#relax_zone_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#relax_zone_second_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#enter_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#toilet_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#toilet_disabled_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#work_place_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#work_place_second_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#work_place_third_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#stairs_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#stairs_second_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#stairs_third_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#stairs_fourth_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#stairs_fifth_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#stairs_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#stairs_second_floor_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#stairs_third_floor_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#stairs_fourth_floor_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#elevator_disabled_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#work_place_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#projector_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#relax_zone_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#relax_zone_second_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+    /* Red pointer hover animations */
+
+#employe_only_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#employe_only_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+    /* Orange pointer hover animations */
+
+#emergency_bullet:hover {
+    transform: scale(1.1);
+}
+
+#emergency_main_bullet:hover {
+    transform: scale(1.1);
+}
+
+#emergency_bullet_third:hover {
+    transform: scale(1.1);
+}
+
+#emergency_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+#emergency_second_bullet_fourth:hover {
+    transform: scale(1.1);
+}
+
+@media  screen and (max-width: 2110px) {
+
+    /* Media bullet points 1st floor */
+
+    #plan_canvas {
+        min-height: 705px;
+    }
+
+    #enter_bullet {
+        left: 160px;
+        top: 230px;
+    }
+
+    #enter_disabled_bullet {
+        left: 745px;
+        top: 30px;
+    }
+
+    #enter_main_bullet {
+        left: 1700px;
+        top: 375px;
+    }
+
+    #pc_bullet {
+        left: 250px;
+        top: 300px;
+    }
+
+    #pc_second_bullet {
+        left: 1325px;
+        top: 205px;
+    }
+
+    #self_service_bullet {
+        left: 290px;
+        top: 380px;
+    }
+
+    #self_service_second_bullet {
+        left: 1359px;
+        top: 292px;
+    }
+
+    #book_takeout_bullet {
+        left: 340px;
+        top: 300px;
+    }
+
+    #book_takeout_second_bullet {
+        left: 1287px;
+        top: 292px;
+    }
+
+    #box_bullet {
+        left: 1700px;
+        top: 500px;
+    }
+
+    #cafe_bullet {
+        left: 280px;
+        top: 120px;
+    }
+
+    #dinner_bullet {
+        left: 1045px;
+        top: 490px;
+    }
+
+    #calc_box_room_bullet {
+        left: 400px;
+        top: 120px;
+    }
+
+    #arch_box_room_bullet {
+        left: 1175px;
+        top: 465px;
+    }
+
+    #volt_box_room_bullet {
+        left: 1370px;
+        top: 465px;
+    }
+
+    #cyber_box_room_bullet {
+        left: 400px;
+        top: 400px;
+    }
+
+    #stock_box_room_bullet {
+        left: 520px;
+        top: 400px;
+    }
+
+    #printing_bullet {
+        left: 630px;
+        top: 400px;
+    }
+
+    #stairs_bullet {
+        left: 780px;
+        top: 130px;
+    }
+
+    #stairs_bullet {
+        left: 780px;
+        top: 180px;
+    }
+
+    #stairs_second_floor_bullet {
+        left: 730px;
+        top: 340px;
+    }
+
+    #stairs_second_floor_second_bullet {
+        left: 1500px;
+        top: 500px;
+    }
+
+    #toilet_bullet {
+        left: 890px;
+        top: 420px;
+    }
+
+    #toilet_disabled_bullet {
+        left: 970px;
+        top: 420px;
+    }
+
+    #emergency_bullet {
+        left: 685px;
+        top: 500px;
+    }
+
+    #emergency_main_bullet {
+        left: 1705px;
+        top: 200px;
+    }
+
+    #elevator_disabled_bullet {
+        left: 800px;
+        top: 340px;
+    }
+
+    #work_place_bullet {
+        left: 1140px;
+        top: 160px;
+    }
+
+    #work_place_second_bullet {
+        left: 1140px;
+        top: 300px;
+    }
+
+    #relax_zone_bullet {
+        left: 1050px;
+        top: 50px;
+    }
+
+    #books_bullet {
+        left: 975px;
+        top: 205px;
+    }
+
+    #locker_bullet {
+        left: 1550px;
+        top: 180px;
+    }
+
+    #reception_bullet {
+        left: 1430px;
+        top: 290px;
+    }
+
+    /* Media bullet points 2nd floor */
+
+    #pc_bullet_second {
+        left: 426px;
+        top: 178px;
+    }
+
+    #stairs_bullet_second {
+        left: 143px;
+        top: 123px;
+    }
+
+    #stairs_second_floor_bullet_second {
+        left: 1719px;
+        top: 224px;
+    }
+
+    #stairs_second_floor_second_bullet_second {
+        left: 1841px;
+        top: 395px;
+    }
+
+    #elevator_disabled_bullet_second {
+        left: 251px;
+        top: 123px;
+    }
+
+    #work_place_bullet_second {
+        left: 631px;
+        top: 158px;
+    }
+
+    #work_place_second_bullet_second {
+        left: 1006px;
+        top: 158px;
+    }
+
+    #work_place_third_bullet_second {
+        left: 1341px;
+        top: 158px;
+    }
+
+    #work_place_fourth_bullet_second {
+        left: 539px;
+        top: 348px;
+    }
+
+    #books_bullet_second {
+        left: 1117px;
+        top: 348px;
+    }
+
+    /* Media bullet points 3rd floor */
+
+    #engine_box_room_bullet_fourth {
+        left: 1065px;
+        top: 300px;
+    }
+
+    #group_room_bullet_fourth {
+        left: 912px;
+        top: 200px;
+    }
+
+    #group_room_second_bullet_fourth {
+        left: 912px;
+        top: 288px;
+    }
+
+    #group_room_third_bullet_fourth {
+        left: 1168px;
+        top: 354px;
+    }
+
+    #group_room_fourth_bullet_fourth {
+        left: 1239px;
+        top: 354px;
+    }
+
+    #pc_bullet_fourth {
+        left: 200px;
+        top: 330px;
+    }
+
+    #pc_work_bullet_fourth {
+        left: 1255px;
+        top: 60px;
+    }
+
+    #projector_bullet_fourth {
+        left: 1381px;
+        top: 360px;
+    }
+
+    #employe_only_bullet_fourth {
+        left: 1700px;
+        top: 360px;
+    }
+
+    #elevator_disabled_bullet_fourth {
+        left: 1800px;
+        top: 60px;
+    }
+
+    #elevator_disabled_second_bullet_fourth {
+        left: 880px;
+        top: 505px;
+    }
+
+    #relax_zone_bullet_fourth {
+        left: 890px;
+        top: 70px;
+    }
+
+    #relax_zone_second_bullet_fourth {
+        left: 1440px;
+        top: 280px;
+    }
+
+    #enter_bullet_fourth {
+        left: 130px;
+        top: 230px;
+    }
+
+    #toilet_bullet_fourth {
+        left: 1300px;
+        top: 180px;
+    }
+
+    #toilet_disabled_bullet_fourth {
+        left: 1311px;
+        top: 360px;
+    }
+
+    #vr_room_fourth {
+        left: 250px;
+        top: 150px;
+    }
+
+    #emergency_bullet_fourth {
+        left: 760px;
+        top: 490px;
+    }
+
+    #emergency_second_bullet_fourth {
+        left: 1775px;
+        top: 200px;
+    }
+
+    #work_place_bullet_fourth {
+        left: 585px;
+        top: 340px;
+    }
+
+    #work_place_second_bullet_fourth {
+        left: 491px;
+        top: 70px;
+    }
+
+    #work_place_third_bullet_fourth {
+        left: 1225px;
+        top: 470px;
+    }
+
+    #stairs_bullet_fourth {
+        left: 1570px;
+        top: 460px;
+    }
+
+    #stairs_second_bullet_fourth {
+        left: 1630px;
+        top: 130px;
+    }
+
+    #stairs_third_bullet_fourth {
+        left: 1685px;
+        top: 460px;
+    }
+
+    #stairs_fourth_bullet_fourth {
+        left: 905px;
+        top: 380px;
+    }
+
+    #stairs_fifth_bullet_fourth {
+        left: 1100px;
+        top: 370px;
+    }
+
+    #books_bullet_fourth {
+        left: 775px;
+        top: 160px;
+    }
+
+    /* Media bullet points 4th floor */
+
+    #pc_bullet_third {
+        left: 350px;
+        top: 422px;
+    }
+
+    #stairs_bullet_third {
+        left: 1648px;
+        top: 96px;
+    }
+
+    #stairs_second_floor_bullet_third {
+        left: 1547px;
+        top: 504px;
+    }
+
+    #stairs_third_floor_bullet_third {
+        left: 468px;
+        top: 288px;
+    }
+
+    #stairs_fourth_floor_bullet_third {
+        left: 853px;
+        top: 351px;
+    }
+
+    #elevator_disabled_bullet_third {
+        left: 445px;
+        top: 508px;
+    }
+
+    #work_place_bullet_third {
+        left: 699px;
+        top: 273px;
+    }
+
+    #books_bullet_third {
+        left: 240px;
+        top: 350px;
+    }
+
+    #books_second_bullet_third {
+        left: 240px;
+        top: 150px;
+    }
+
+    #books_third_bullet_third {
+        left: 440px;
+        top: 10px;
+    }
+
+    #books_fourth_bullet_third {
+        left: 760px;
+        top: 10px;
+    }
+
+    #books_fifth_bullet_third {
+        left: 1225px;
+        top: 10px;
+    }
+
+    #books_sixth_bullet_third {
+        left: 1460px;
+        top: 10px;
+    }
+
+    #books_seventh_bullet_third {
+        left: 1690px;
+        top: 10px;
+    }
+
+    #emergency_bullet_third {
+        left: 261px;
+        top: 492px;
+    }
+
+    #employe_only_bullet_third {
+        left: 1626px;
+        top: 344px;
+    }
+
+    #projector_bullet_third {
+        left: 1038px;
+        top: 313px;
+    }
+
+    #relax_zone_bullet_third {
+        left: 601px;
+        top: 269px;
+    }
+
+    #relax_zone_second_bullet_third {
+        left: 1160px;
+        top: 269px;
+    }
+}
+
