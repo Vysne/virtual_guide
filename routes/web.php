@@ -26,7 +26,7 @@ Route::get('second_floor', [FloorController::class, 'getSecondFloorPage'])->name
 
 Route::get('third_floor', [FloorController::class, 'getThirdFloorPage'])->name('third_floor');
 
-Route::get('/en', [FloorController::class, 'getFirstFloorPageEN'])->name('first_floor_en');
+//Route::get('/en', [FloorController::class, 'getFirstFloorPageEN'])->name('first_floor_en');
 
 Route::get('first_half_floor_en', [FloorController::class, 'getFirstHalfFloorPageEN'])->name('first_half_floor_en');
 
