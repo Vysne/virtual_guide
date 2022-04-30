@@ -90,8 +90,6 @@ function setGreeting() {
 /* EVENT LISTENERS */
 const filterSelect = document.querySelector('#filter');
 
-console.log(filterSelect);
-
 filterSelect.addEventListener('change', (event) => {
    const bulletPoints = document.querySelectorAll('#plan_bullets > div');
    bulletPoints.forEach((bulletPoint) => {
@@ -110,72 +108,72 @@ filterSelect.addEventListener('change', (event) => {
    });
 });
 
-// function hideFilter(element) {
-//
-//     let select1 = document.getElementById('select1');
-//
-//     let select2 = document.getElementById('select2');
-//
-//     let select3 = document.getElementById('select3');
-//
-//     let select4 = document.getElementById('select4');
-//
-//     let select5 = document.getElementById('select5');
-//
-//     let select6 = document.getElementById('select6');
-//
-//     let select7 = document.getElementById('select7');
-//
-//     let select8 = document.getElementById('select8');
-//
-//     let select0 = document.getElementById('select0');
-//
-//     if (select1) {
-//         document.getElementById('room').style.display = element.value == 1 ? 'block' : 'none';
-//     }
-//     if (select2) {
-//         document.getElementById('enter').style.display = element.value == 2 ? 'block' : 'none';
-//     }
-//     if (select3) {
-//         document.getElementById('services').style.display = element.value == 3 ? 'block' : 'none';
-//
-//     }
-//     if (select4) {
-//         document.getElementById('book').style.display = element.value == 4 ? 'block' : 'none';
-//
-//     }
-//     if (select5) {
-//         document.getElementById('stairs').style.display = element.value == 5 ? 'block' : 'none';
-//
-//     }
-//     if (select6) {
-//         document.getElementById('emergency').style.display = element.value == 6 ? 'block' : 'none';
-//
-//     }
-//     if (select7) {
-//         document.getElementById('work_relax').style.display = element.value == 7 ? 'block' : 'none';
-//
-//     }
-//     if (select8) {
-//         document.getElementById('disabled').style.display = element.value == 8 ? 'block' : 'none';
-//
-//     }
-//     if (select0) {
-//         document.getElementById('plan_bullets').style.display = element.value == 0 ? 'block' : '';
-//         // document.getElementById('filter').onchange = function () {
-//         //     window.location = location.href;}
-//     }
-//
-// }
+const bulletPoints = document.querySelectorAll('#plan_bullets > div img');
+console.log(bulletPoints);
 
-// function bulletPopup() {
-//
-// }
+bulletPoints.forEach((bulletPoint) => {
+    bulletPoint.addEventListener('click', (event) => {
+        const bulletPointDesc = bulletPoint.nextElementSibling;
+        console.log(bulletPointDesc);
+        let displayStatus = bulletPointDesc.style.display;
+        if(displayStatus != 'block') {
+            bulletPointDesc.style.display = 'block';
+        }
+        else {
+            bulletPointDesc.style.display = 'none';
+        }
+    });
+});
+
+var btnPcs = document.querySelectorAll('#redirect_pc > div button');
+
+var btnRooms = document.querySelectorAll('#redirect_room > div button');
+
+var btnPrints = document.querySelectorAll('#redirect_print > div button');
+
+btnPcs.forEach((btnPc) => {
+    btnPc.addEventListener('click', (event) => {
+        document.location.href = 'https://aleph.library.lt/F?func=find-b-0&amp=&amp=&con%5Flng=LIT&local%5Fbase=KTU01&pds_handle=GUEST';
+    });
+});
+
+btnRooms.forEach((btnRoom) => {
+    btnRoom.addEventListener('click', (event) => {
+        document.location.href = 'https://biblioteka.ktu.edu/paslaugos/#biblioteka';
+    });
+});
+
+btnPrints.forEach((btnPrint) => {
+    btnPrint.addEventListener('click', (event) => {
+        document.location.href = 'https://biblioteka.ktu.edu/paslaugos#spausdinimas-kopijavimas';
+    });
+});
+
+var btnPcsEn = document.querySelectorAll('#redirect_pc_en > div button');
+
+var btnRoomsEn = document.querySelectorAll('#redirect_room_en > div button');
+
+var btnPrintsEn = document.querySelectorAll('#redirect_print_en > div button');
+
+btnPcsEn.forEach((btnPcEn) => {
+    btnPcEn.addEventListener('click', (event) => {
+        document.location.href = 'https://aleph.library.lt/F?func=option-update-lng&P_CON_LNG=ENG';
+    });
+});
+
+btnRoomsEn.forEach((btnRoomEn) => {
+    btnRoomEn.addEventListener('click', (event) => {
+        document.location.href = 'https://library.ktu.edu/services/#university-campus-library';
+    });
+});
+
+btnPrintsEn.forEach((btnPrintEn) => {
+    btnPrintEn.addEventListener('click', (event) => {
+        document.location.href = 'https://library.ktu.edu/services#copying-printing';
+    });
+});
 
 currentTime();
 setGreeting();
 
 planNavigation();
-// bulletPopup();
-
-// hideFilter();

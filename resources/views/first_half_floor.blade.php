@@ -36,23 +36,24 @@
             <a href="{{ route('first_half_floor_en') }}" style="text-decoration: none; color: yellow">EN</a>
         </div>
     </div>
+    @if(isset($pointers) && !empty($pointers))
     <div id="main_container">
         <div id="plan_filter">
             <div class="plan_search"></div>
             <div class="responsive_select">
-                <div class="plan_search">
-                    <div class="input-group">
-                        <div class="form-outline">
-                            <input type="search" id="form1" class="form-control p-3" style="font-size: 1.2rem" placeholder="Paieška"/>
-                        </div>
-                        <button type="button" class="btn btn-primary" style="padding: 0.375rem 1.75rem">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                </div>
+{{--                <div class="plan_search">--}}
+{{--                    <div class="input-group">--}}
+{{--                        <div class="form-outline">--}}
+{{--                            <input type="search" id="form1" class="form-control p-3" style="font-size: 1.2rem" placeholder="Paieška"/>--}}
+{{--                        </div>--}}
+{{--                        <button type="button" class="btn btn-primary" style="padding: 0.375rem 1.75rem">--}}
+{{--                            <i class="fas fa-search"></i>--}}
+{{--                        </button>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <div class="small_select">
                     <select onchange="window.location.href=this.options[this.selectedIndex].value;" class="form-select form-select-lg mb-3 p-3" aria-label=".form-select-lg example">
-                        <option value="{{ route('first_floor') }}">1st aukštas</option>
+                        <option value="{{ route('first_floor') }}">1 aukštas</option>
                         <option selected>1 aukšto balkonas</option>
                         <option value="{{ route('second_floor') }}">2 aukštas</option>
                         <option value="{{ route('third_floor') }}">3 aukštas</option>
@@ -89,48 +90,135 @@
                 <div id="plan_bullets">
                     <div data-filter="books">
                         <div id="books_bullet_second" title="Textbook shelves">
-                            <img src="assets/books_pointer.png">
+                            <div id="books_bullet_second_wrapper">
+                                <img src="assets/books_pointer.png">
+                                <div class="books_bullet_second_desc">
+                                    <h4 class="title">{{$pointers[26]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[26]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <div data-filter="services">
-                        <div id="pc_bullet_second" title="Order or book rental station">
-                            <img src="assets/pc_pointer.png">
+                        <div id="redirect_pc">
+                            <div id="pc_bullet_second" title="Order or book rental station">
+                                <div id="pc_bullet_second_wrapper">
+                                    <img src="assets/pc_pointer.png">
+                                    <div class="pc_bullet_second_desc">
+                                        <h4 class="title">{{$pointers[0]->name}}</h4>
+                                        <div class="info">
+                                            <p>{{$pointers[0]->comment}}</p>
+                                            <p>{{$pointers[0]->email}}</p>
+                                            <p>{{$pointers[0]->main_email}}</p>
+                                            <button id="redirect_pc" class="pc_button" style="font-size: 0.9rem">Bibliotekos katalogas</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div data-filter="relax_and_work_zone">
                         <div id="work_place_bullet_second" title="Workplaces">
-                            <img src="assets/work_place_pointer.png">
+                            <div id="work_place_bullet_second_wrapper">
+                                <img src="assets/work_place_pointer.png">
+                                <div class="work_place_bullet_second_desc">
+                                    <h4 class="title">{{$pointers[19]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[19]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="work_place_second_bullet_second" title="Workplaces">
-                            <img src="assets/work_place_pointer.png">
+                            <div id="work_place_second_bullet_second_wrapper">
+                                <img src="assets/work_place_pointer.png">
+                                <div class="work_place_second_bullet_second_desc">
+                                    <h4 class="title">{{$pointers[19]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[19]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="work_place_third_bullet_second" title="Workplaces">
-                            <img src="assets/work_place_pointer.png">
+                            <div id="work_place_third_bullet_second_wrapper">
+                                <img src="assets/work_place_pointer.png">
+                                <div class="work_place_third_bullet_second_desc">
+                                    <h4 class="title">{{$pointers[19]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[19]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="work_place_fourth_bullet_second" title="Workplaces">
-                            <img src="assets/work_place_pointer.png">
+                            <div id="work_place_fourth_bullet_second_wrapper">
+                                <img src="assets/work_place_pointer.png">
+                                <div class="work_place_fourth_bullet_second_desc">
+                                    <h4 class="title">{{$pointers[19]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[19]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div data-filter="stairs">
                         <div id="stairs_bullet_second" title="Stairs to first floor">
-                            <img src="assets/stairs_pointer.png">
+                            <div id="stairs_bullet_second_wrapper">
+                                <img src="assets/stairs_pointer.png">
+                                <div class="stairs_bullet_second_desc">
+                                    <h4 class="title">{{$pointers[23]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[23]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="stairs_second_floor_bullet_second" title="Stairs to first floor ">
-                            <img src="assets/stairs_pointer.png">
+                            <div id="stairs_second_floor_bullet_second_wrapper">
+                                <img src="assets/stairs_pointer.png">
+                                <div class="stairs_second_floor_bullet_second_desc">
+                                    <h4 class="title">{{$pointers[23]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[23]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="stairs_second_floor_second_bullet_second" title="Stairs to second floor">
-                            <img src="assets/stairs_pointer.png">
+                            <div id="stairs_second_floor_second_bullet_second_wrapper">
+                                <img src="assets/stairs_pointer.png">
+                                <div class="stairs_second_floor_second_bullet_second_desc">
+                                    <h4 class="title">{{$pointers[24]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[24]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div data-filter="disabled">
                         <div id="elevator_disabled_bullet_second" title="Elevator for disabled people">
-                            <img src="assets/disabled_elevator_pointer.png">
+                            <div id="elevator_disabled_bullet_second_wrapper">
+                                <img src="assets/disabled_elevator_pointer.png">
+                                <div class="elevator_disabled_bullet_second_desc">
+                                    <h4 class="title">{{$pointers[21]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[21]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
             </div>
         </div>
     </div>
 </div>
+    @endif
 </div>
 <script type="text/javascript" src="js/script.js"></script>
 </body>

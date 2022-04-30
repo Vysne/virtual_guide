@@ -36,20 +36,21 @@
             <a href="{{ route('second_floor_en') }}" style="text-decoration: none; color: yellow">EN</a>
         </div>
     </div>
+    @if(isset($pointers) && !empty($pointers))
     <div id="main_container">
         <div id="plan_filter">
             <div class="plan_search"></div>
             <div class="responsive_select">
-                <div class="plan_search">
-                    <div class="input-group">
-                        <div class="form-outline">
-                            <input type="search" id="form1" class="form-control p-3" style="font-size: 1.2rem" placeholder="Paieška"/>
-                        </div>
-                        <button type="button" class="btn btn-primary" style="padding: 0.375rem 1.75rem">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                </div>
+{{--                <div class="plan_search">--}}
+{{--                    <div class="input-group">--}}
+{{--                        <div class="form-outline">--}}
+{{--                            <input type="search" id="form1" class="form-control p-3" style="font-size: 1.2rem" placeholder="Paieška"/>--}}
+{{--                        </div>--}}
+{{--                        <button type="button" class="btn btn-primary" style="padding: 0.375rem 1.75rem">--}}
+{{--                            <i class="fas fa-search"></i>--}}
+{{--                        </button>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <div class="small_select">
                     <select onchange="window.location.href=this.options[this.selectedIndex].value;" class="form-select form-select-lg mb-3 p-3" aria-label=".form-select-lg example">
                         <option value="{{ route('first_floor') }}">1 aukštas</option>
@@ -92,108 +93,392 @@
                 <div id="plan_bullets">
                     <div data-filter="books">
                         <div id="books_bullet_fourth" title="Leisure books section">
-                            <img src="assets/books_pointer.png">
+                            <div id="books_bullet_fourth_wrapper">
+                                <img src="assets/books_pointer.png">
+                                <div class="books_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[27]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[27]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div data-filter="entrance">
                         <div id="enter_bullet_fourth" title="Entrance from KTU Faculty of Construction and Architecture">
-                            <img src="assets/enter_pointer.png">
+                            <div id="enter_bullet_fourth_wrapper">
+                                <img src="assets/enter_pointer.png">
+                                <div class="enter_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[25]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[25]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div data-filter="work_room">
-                        <div id="engine_box_room_bullet_fourth" title="ENGINE BOX workroom(M9)">
-                            <img src="assets/group_room_pointer.png">
-                        </div>
-                        <div id="group_room_bullet_fourth" title="PRIVATE BOX workroom(P1)">
-                            <img src="assets/group_room_pointer.png">
-                        </div>
-                        <div id="group_room_second_bullet_fourth" title="PRIVATE BOX workroom(P2)">
-                            <img src="assets/group_room_pointer.png">
-                        </div>
-                        <div id="group_room_third_bullet_fourth" title="PRIVATE BOX workroom(P3)">
-                            <img src="assets/group_room_pointer.png">
-                        </div>
-                        <div id="group_room_fourth_bullet_fourth" title="PRIVATE BOX workroom(P4)">
-                            <img src="assets/group_room_pointer.png">
-                        </div>
-                        <div id="vr_room_fourth" title="HUMAN BOX workrooms(M6;M6.1)">
-                            <img src="assets/vr_pointer.png">
-                            <img src="assets/group_room_pointer.png" style="margin-left: 60px">
-                        </div>
-                        <div id="work_place_bullet_fourth" title="AUDIENCE BOX workroom(M8)">
-                            <img src="assets/group_room_pointer.png">
-                        </div>
-                        <div id="work_place_second_bullet_fourth" title="ELEMENTS BOX workrooms(M7;M7.1)">
-                            <img src="assets/group_room_pointer.png">
-                            <img src="assets/group_room_pointer.png" style="margin-left: 125px">
-                        </div>
-                        <div id="projector_bullet_fourth" title="M10 Amphitheatre">
-                            <img src="assets/projector_pointer.png">
+                        <div id="redirect_room">
+                            <div id="engine_box_room_bullet_fourth" title="ENGINE BOX workroom(M9)">
+                                <div id="engine_box_room_bullet_fourth_wrapper">
+                                    <img src="assets/group_room_pointer.png">
+                                    <div class="engine_box_room_bullet_fourth_desc">
+                                        <h4 class="title">{{$pointers[32]->name}}</h4>
+                                        <div class="info">
+                                            <p>{{$pointers[32]->comment}}</p>
+                                            <p>{{$pointers[32]->email}}</p>
+                                            <p>{{$pointers[32]->phone_number}}</p>
+                                            <p>{{$pointers[32]->main_email}}</p>
+                                            <button id="redirect_room" class="pc_button" style="font-size: 0.9rem">Rezervacija</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="group_room_bullet_fourth" title="PRIVATE BOX workroom(P1)">
+                                <div id="group_room_bullet_fourth_wrapper">
+                                    <img src="assets/group_room_pointer.png">
+                                    <div class="group_room_bullet_fourth_desc">
+                                        <h4 class="title">{{$pointers[40]->name}}</h4>
+                                        <div class="info">
+                                            <p>{{$pointers[40]->comment}}</p>
+                                            <p>{{$pointers[40]->email}}</p>
+                                            <p>{{$pointers[40]->phone_number}}</p>
+                                            <p>{{$pointers[40]->main_email}}</p>
+                                            <button id="redirect_room" class="pc_button" style="font-size: 0.9rem">Rezervacija</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="group_room_second_bullet_fourth" title="PRIVATE BOX workroom(P2)">
+                                <div id="group_room_second_bullet_fourth_wrapper">
+                                    <img src="assets/group_room_pointer.png">
+                                    <div class="group_room_second_bullet_fourth_desc">
+                                        <h4 class="title">{{$pointers[41]->name}}</h4>
+                                        <div class="info">
+                                            <p>{{$pointers[41]->comment}}</p>
+                                            <p>{{$pointers[41]->email}}</p>
+                                            <p>{{$pointers[41]->phone_number}}</p>
+                                            <p>{{$pointers[41]->main_email}}</p>
+                                            <button id="redirect_room" class="pc_button" style="font-size: 0.9rem">Rezervacija</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="group_room_third_bullet_fourth" title="PRIVATE BOX workroom(P3)">
+                                <div id="group_room_third_bullet_fourth_wrapper">
+                                    <img src="assets/group_room_pointer.png">
+                                    <div class="group_room_third_bullet_fourth_desc">
+                                        <h4 class="title">{{$pointers[42]->name}}</h4>
+                                        <div class="info">
+                                            <p>{{$pointers[42]->comment}}</p>
+                                            <p>{{$pointers[42]->email}}</p>
+                                            <p>{{$pointers[42]->phone_number}}</p>
+                                            <p>{{$pointers[42]->main_email}}</p>
+                                            <button id="redirect_room" class="pc_button" style="font-size: 0.9rem">Rezervacija</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="group_room_fourth_bullet_fourth" title="PRIVATE BOX workroom(P4)">
+                                <div id="group_room_fourth_bullet_fourth_wrapper">
+                                    <img src="assets/group_room_pointer.png">
+                                    <div class="group_room_fourth_bullet_fourth_desc">
+                                        <h4 class="title">{{$pointers[43]->name}}</h4>
+                                        <div class="info">
+                                            <p>{{$pointers[43]->comment}}</p>
+                                            <p>{{$pointers[43]->email}}</p>
+                                            <p>{{$pointers[43]->phone_number}}</p>
+                                            <p>{{$pointers[43]->main_email}}</p>
+                                            <button id="redirect_room" class="pc_button" style="font-size: 0.9rem">Rezervacija</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="vr_room_fourth" title="HUMAN BOX workrooms(M6;M6.1)">
+                                <div id="vr_room_fourth_wrapper">
+                                    <img src="assets/vr_pointer.png">
+                                    <div class="vr_room_fourth_desc">
+                                        <h4 class="title">{{$pointers[37]->name}}</h4>
+                                        <div class="info">
+                                            <p>{{$pointers[37]->comment}}</p>
+                                            <p>{{$pointers[37]->email}}</p>
+                                            <p>{{$pointers[37]->phone_number}}</p>
+                                            <p>{{$pointers[37]->main_email}}</p>
+                                            <button id="redirect_room" class="pc_button" style="font-size: 0.9rem">Rezervacija</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="vr_room_second_fourth" title="HUMAN BOX workrooms(M6;M6.1)">
+                                <div id="vr_room_second_fourth_wrapper">
+                                    <img src="assets/group_room_pointer.png">
+                                    <div class="vr_room_second_fourth_desc">
+                                        <h4 class="title">{{$pointers[37]->name}}</h4>
+                                        <div class="info">
+                                            <p>{{$pointers[37]->comment}}</p>
+                                            <p>{{$pointers[37]->email}}</p>
+                                            <p>{{$pointers[37]->phone_number}}</p>
+                                            <p>{{$pointers[37]->main_email}}</p>
+                                            <button id="redirect_room" class="pc_button" style="font-size: 0.9rem">Rezervacija</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="work_place_bullet_fourth" title="AUDIENCE BOX workroom(M8)">
+                                <div id="work_place_bullet_fourth_wrapper">
+                                    <img src="assets/group_room_pointer.png">
+                                    <div class="work_place_bullet_fourth_desc">
+                                        <h4 class="title">{{$pointers[39]->name}}</h4>
+                                        <div class="info">
+                                            <p>{{$pointers[39]->comment}}</p>
+                                            <p>{{$pointers[39]->email}}</p>
+                                            <p>{{$pointers[39]->phone_number}}</p>
+                                            <p>{{$pointers[39]->main_email}}</p>
+                                            <button id="redirect_room" class="pc_button" style="font-size: 0.9rem">Rezervacija</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="work_place_second_bullet_fourth" title="ELEMENTS BOX workrooms(M7;M7.1)">
+                                <div id="work_place_second_bullet_fourth_wrapper">
+                                    <img src="assets/group_room_pointer.png">
+                                    <div class="work_place_second_bullet_fourth_desc">
+                                        <h4 class="title">{{$pointers[38]->name}}</h4>
+                                        <div class="info">
+                                            <p>{{$pointers[38]->comment}}</p>
+                                            <p>{{$pointers[38]->email}}</p>
+                                            <p>{{$pointers[38]->phone_number}}</p>
+                                            <p>{{$pointers[38]->main_email}}</p>
+                                            <button id="redirect_room" class="pc_button" style="font-size: 0.9rem">Rezervacija</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="work_place_second_bullet_fifth" title="ELEMENTS BOX workrooms(M7;M7.1)">
+                                <div id="work_place_second_bullet_fifth_wrapper">
+                                    <img src="assets/group_room_pointer.png">
+                                    <div class="work_place_second_bullet_fifth_desc">
+                                        <h4 class="title">{{$pointers[38]->name}}</h4>
+                                        <div class="info">
+                                            <p>{{$pointers[38]->comment}}</p>
+                                            <p>{{$pointers[38]->email}}</p>
+                                            <p>{{$pointers[38]->phone_number}}</p>
+                                            <p>{{$pointers[38]->main_email}}</p>
+                                            <button id="redirect_room" class="pc_button" style="font-size: 0.9rem">Rezervacija</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="projector_bullet_fourth" title="M10 Amphitheatre">
+                                <div id="projector_bullet_fourth_wrapper">
+                                    <img src="assets/projector_pointer.png">
+                                    <div class="projector_bullet_fourth_desc">
+                                        <h4 class="title">{{$pointers[30]->name}}</h4>
+                                        <div class="info">
+                                            <p>{{$pointers[30]->comment}}</p>
+                                            <p>{{$pointers[30]->email}}</p>
+                                            <p>{{$pointers[30]->phone_number}}</p>
+                                            <p>{{$pointers[30]->main_email}}</p>
+                                            <button id="redirect_room" class="pc_button" style="font-size: 0.9rem">Rezervacija</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div data-filter="stairs">
                         <div id="stairs_bullet_fourth" title="Stairs to third floor">
-                            <img src="assets/stairs_pointer.png">
+                            <div id="stairs_bullet_fourth_wrapper">
+                                <img src="assets/stairs_pointer.png">
+                                <div class="stairs_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[31]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[31]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="stairs_second_bullet_fourth" title="Stairs to third floor">
-                            <img src="assets/stairs_pointer.png">
+                            <div id="stairs_second_bullet_fourth_wrapper">
+                                <img src="assets/stairs_pointer.png">
+                                <div class="stairs_second_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[31]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[31]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <div id="stairs_third_bullet_fourth" title="Stairs to first floor balcony">
-                            <img src="assets/stairs_pointer.png">
+                            <div id="stairs_third_bullet_fourth_wrapper">
+                                <img src="assets/stairs_pointer.png">
+                                <div class="stairs_third_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[16]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[16]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="stairs_fourth_bullet_fourth" title="Stairs to third floor">
-                            <img src="assets/stairs_pointer.png">
+                            <div id="stairs_fourth_bullet_fourth_wrapper">
+                                <img src="assets/stairs_pointer.png">
+                                <div class="stairs_fourth_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[31]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[31]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="stairs_fifth_bullet_fourth" title="Stairs to third floor">
-                            <img src="assets/stairs_pointer.png">
+                            <div id="stairs_fifth_bullet_fourth_wrapper">
+                                <img src="assets/stairs_pointer.png">
+                                <div class="stairs_fifth_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[31]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[31]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div data-filter="emergency_exit">
                         <div id="emergency_bullet_fourth" title="Emergency stairs">
-                            <img src="assets/emergency_pointer.png">
+                            <div id="emergency_bullet_fourth_wrapper">
+                                <img src="assets/emergency_pointer.png">
+                                <div class="emergency_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[11]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[11]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="emergency_second_bullet_fourth" title="Emergency stairs">
-                            <img src="assets/emergency_pointer.png">
+                            <div id="emergency_second_bullet_fourth_wrapper">
+                                <img src="assets/emergency_pointer.png">
+                                <div class="emergency_second_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[11]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[11]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div data-filter="relax_and_work_zone">
                         <div id="pc_work_bullet_fourth" title="Computer work spaces">
-                            <img src="assets/pc_work_pointer.png">
+                            <div id="pc_work_bullet_fourth_wrapper">
+                                <img src="assets/pc_work_pointer.png">
+                                <div class="pc_work_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[33]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[33]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="relax_zone_bullet_fourth" title="Relax zone">
-                            <img src="assets/relax_zone_pointer.png">
+                            <div id="relax_zone_bullet_fourth_wrapper">
+                                <img src="assets/relax_zone_pointer.png">
+                                <div class="relax_zone_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[20]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[20]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="relax_zone_second_bullet_fourth" title="Relax zone">
-                            <img src="assets/relax_zone_pointer.png">
+                            <div id="relax_zone_second_bullet_fourth_wrapper">
+                                <img src="assets/relax_zone_pointer.png">
+                                <div class="relax_zone_second_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[20]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[20]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="toilet_bullet_fourth" title="WC">
-                            <img src="assets/toilet_pointer.png">
+                            <div id="toilet_bullet_fourth_wrapper">
+                                <img src="assets/toilet_pointer.png">
+                                <div class="toilet_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[17]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[17]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="work_place_third_bullet_fourth" title="Workplaces">
-                            <img src="assets/work_place_pointer.png">
+                            <div id="work_place_third_bullet_fourth_wrapper">
+                                <img src="assets/work_place_pointer.png">
+                                <div class="work_place_third_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[19]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[19]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div data-filter="employee">
                         <div id="employe_only_bullet_fourth" title="Employees only">
-                            <img src="assets/employe_only_pointer.png">
+                            <div id="employe_only_bullet_fourth_wrapper">
+                                <img src="assets/employe_only_pointer.png">
+                                <div class="employe_only_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[10]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[10]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div data-filter="disabled">
                         <div id="elevator_disabled_bullet_fourth" title="Elevator for disabled people">
-                            <img src="assets/disabled_elevator_pointer.png">
+                            <div id="elevator_disabled_bullet_fourth_wrapper">
+                                <img src="assets/disabled_elevator_pointer.png">
+                                <div class="elevator_disabled_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[21]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[21]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="elevator_disabled_second_bullet_fourth" title="Elevator for disabled people">
-                            <img src="assets/disabled_elevator_pointer.png">
+                            <div id="elevator_disabled_second_bullet_fourth_wrapper">
+                                <img src="assets/disabled_elevator_pointer.png">
+                                <div class="elevator_disabled_second_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[21]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[21]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
                         <div id="toilet_disabled_bullet_fourth" title="WC for disabled people">
-                            <img src="assets/toilet_pointer.png">
+                            <div id="toilet_disabled_bullet_fourth_wrapper">
+                                <img src="assets/toilet_pointer.png">
+                                <div class="toilet_disabled_bullet_fourth_desc">
+                                    <h4 class="title">{{$pointers[18]->name}}</h4>
+                                    <div class="info">
+                                        <p>{{$pointers[18]->comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    @endif
 </div>
 <script type="text/javascript" src="js/script.js"></script>
 </body>

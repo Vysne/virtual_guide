@@ -20,6 +20,4 @@ class Pointer extends Model
         'link',
         'comment',
     ];
-
-
 }

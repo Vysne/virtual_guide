@@ -127,6 +127,40 @@ btn btn-primary {
     height: 100%;
 }
 
+.close_btn {
+    cursor: pointer;
+    position: relative;
+    left: 90%;
+}
+
+.title {
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    text-transform: none;
+    font-size: 1rem;
+    border-bottom: solid 3px white;
+    text-align: center;
+    padding: 10px;
+}
+
+.info {
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    text-transform: none;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.pc_button {
+    background-color: white;
+    width: 70%;
+    margin: 0 15% 5%;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.pc_button:hover {
+    border: solid 2px yellow;
+}
+
 /* Bullet points 1st floor */
 
 #pc_bullet {
@@ -151,6 +185,7 @@ btn btn-primary {
     top: 560px;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #self_service_second_bullet {
@@ -167,6 +202,7 @@ btn btn-primary {
     top: 440px;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #book_takeout_second_bullet {
@@ -183,6 +219,7 @@ btn btn-primary {
     top: 751px;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #cafe_bullet {
@@ -199,6 +236,7 @@ btn btn-primary {
     top: 730px;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #enter_bullet {
@@ -207,6 +245,7 @@ btn btn-primary {
     top: 366px;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #enter_disabled_bullet {
@@ -223,6 +262,7 @@ btn btn-primary {
     top: 510px;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #cyber_box_room_bullet {
@@ -231,6 +271,7 @@ btn btn-primary {
     top: 42vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #stock_box_room_bullet {
@@ -239,6 +280,7 @@ btn btn-primary {
     top: 42vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #printing_bullet {
@@ -247,6 +289,7 @@ btn btn-primary {
     top: 44vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #calc_box_room_bullet {
@@ -257,12 +300,31 @@ btn btn-primary {
     cursor: pointer;
 }
 
+#calc_box_room_second_bullet {
+    position: absolute;
+    left: 663px;
+    top: 200px;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 98;
+}
+
+#calc_box_room_third_bullet {
+    position: absolute;
+    left: 795px;
+    top: 200px;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 99;
+}
+
 #arch_box_room_bullet {
     position: absolute;
     left: 1480px;
     top: 686px;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #volt_box_room_bullet {
@@ -271,6 +333,7 @@ btn btn-primary {
     top: 686px;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #stairs_bullet {
@@ -279,6 +342,7 @@ btn btn-primary {
     top: 23vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 98;
 }
 
 #stairs_second_floor_bullet {
@@ -287,6 +351,7 @@ btn btn-primary {
     top: 40vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #stairs_second_floor_second_bullet {
@@ -295,6 +360,7 @@ btn btn-primary {
     top: 55vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #toilet_bullet {
@@ -303,6 +369,7 @@ btn btn-primary {
     top: 48vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #toilet_disabled_bullet {
@@ -311,6 +378,7 @@ btn btn-primary {
     top: 48vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #emergency_bullet {
@@ -319,6 +387,7 @@ btn btn-primary {
     top: 58vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #emergency_main_bullet {
@@ -335,6 +404,7 @@ btn btn-primary {
     top: 40vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #work_place_bullet {
@@ -367,6 +437,7 @@ btn btn-primary {
     top: 25vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 98;
 }
 
 #locker_bullet {
@@ -383,6 +454,7 @@ btn btn-primary {
     top: 35vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 97;
 }
 
 /* Bullet points 2nd floor */
@@ -393,6 +465,7 @@ btn btn-primary {
     top: 22vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 98;
 }
 
 #stairs_bullet_second {
@@ -465,6 +538,7 @@ btn btn-primary {
     top: 39vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 /* Bullet points 3rd floor */
@@ -475,6 +549,7 @@ btn btn-primary {
     top: 34vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 98;
 }
 
 #group_room_bullet_fourth {
@@ -483,6 +558,7 @@ btn btn-primary {
     top: 25vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 97;
 }
 
 #group_room_second_bullet_fourth {
@@ -491,6 +567,7 @@ btn btn-primary {
     top: 32vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 98;
 }
 
 #group_room_third_bullet_fourth {
@@ -499,6 +576,7 @@ btn btn-primary {
     top: 41vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #group_room_fourth_bullet_fourth {
@@ -507,6 +585,7 @@ btn btn-primary {
     top: 41vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #pc_bullet_fourth {
@@ -523,6 +602,7 @@ btn btn-primary {
     top: 10vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 96;
 }
 
 #projector_bullet_fourth {
@@ -531,6 +611,7 @@ btn btn-primary {
     top: 42vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #employe_only_bullet_fourth {
@@ -539,6 +620,7 @@ btn btn-primary {
     top: 42vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #elevator_disabled_bullet_fourth {
@@ -547,6 +629,7 @@ btn btn-primary {
     top: 9vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 96;
 }
 
 #elevator_disabled_second_bullet_fourth {
@@ -555,6 +638,7 @@ btn btn-primary {
     top: 57vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #relax_zone_bullet_fourth {
@@ -563,6 +647,7 @@ btn btn-primary {
     top: 10vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 96;
 }
 
 #relax_zone_second_bullet_fourth {
@@ -571,6 +656,7 @@ btn btn-primary {
     top: 31vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 98;
 }
 
 #enter_bullet_fourth {
@@ -579,6 +665,7 @@ btn btn-primary {
     top: 28vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 98;
 }
 
 #toilet_bullet_fourth {
@@ -587,6 +674,7 @@ btn btn-primary {
     top: 24vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 97;
 }
 
 #toilet_disabled_bullet_fourth {
@@ -595,6 +683,7 @@ btn btn-primary {
     top: 43vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #vr_room_fourth {
@@ -603,6 +692,16 @@ btn btn-primary {
     top: 18vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 97;
+}
+
+#vr_room_second_fourth {
+    position: absolute;
+    left: 36vh;
+    top: 18vh;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 97;
 }
 
 #emergency_bullet_fourth {
@@ -611,6 +710,7 @@ btn btn-primary {
     top: 56vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #emergency_second_bullet_fourth {
@@ -619,6 +719,7 @@ btn btn-primary {
     top: 20vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 97;
 }
 
 #work_place_bullet_fourth {
@@ -627,6 +728,7 @@ btn btn-primary {
     top: 40vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #work_place_second_bullet_fourth {
@@ -635,6 +737,16 @@ btn btn-primary {
     top: 13vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 96;
+}
+
+#work_place_second_bullet_fifth {
+    position: absolute;
+    left: 64vh;
+    top: 13vh;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 96;
 }
 
 #work_place_third_bullet_fourth {
@@ -643,6 +755,7 @@ btn btn-primary {
     top: 55vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #stairs_bullet_fourth {
@@ -651,6 +764,7 @@ btn btn-primary {
     top: 53vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #stairs_second_bullet_fourth {
@@ -659,6 +773,7 @@ btn btn-primary {
     top: 16vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 97;
 }
 
 #stairs_third_bullet_fourth {
@@ -667,6 +782,7 @@ btn btn-primary {
     top: 53vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #stairs_fourth_bullet_fourth {
@@ -675,6 +791,7 @@ btn btn-primary {
     top: 40vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #stairs_fifth_bullet_fourth {
@@ -683,6 +800,7 @@ btn btn-primary {
     top: 43vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #books_bullet_fourth {
@@ -691,6 +809,7 @@ btn btn-primary {
     top: 17vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 97;
 }
 
 /* Bullet points 4th floor */
@@ -701,6 +820,7 @@ btn btn-primary {
     top: 49vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #stairs_bullet_third {
@@ -717,6 +837,7 @@ btn btn-primary {
     top: 53vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #stairs_third_floor_bullet_third {
@@ -725,6 +846,7 @@ btn btn-primary {
     top: 32vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 97;
 }
 
 #stairs_fourth_floor_bullet_third {
@@ -733,6 +855,7 @@ btn btn-primary {
     top: 41vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #elevator_disabled_bullet_third {
@@ -741,6 +864,7 @@ btn btn-primary {
     top: 59vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #work_place_bullet_third {
@@ -757,6 +881,7 @@ btn btn-primary {
     top: 40vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 98;
 }
 
 #books_second_bullet_third {
@@ -765,6 +890,7 @@ btn btn-primary {
     top: 18vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 97;
 }
 
 #books_third_bullet_third {
@@ -813,6 +939,7 @@ btn btn-primary {
     top: 58vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 100;
 }
 
 #employe_only_bullet_third {
@@ -821,6 +948,7 @@ btn btn-primary {
     top: 41vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #projector_bullet_third {
@@ -829,6 +957,7 @@ btn btn-primary {
     top: 36vh;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #relax_zone_bullet_third {
@@ -890,6 +1019,14 @@ btn btn-primary {
 }
 
 #calc_box_room_bullet:hover {
+    transform: scale(1.1);
+}
+
+#calc_box_room_second_bullet:hover {
+    transform: scale(1.1);
+}
+
+#calc_box_room_third_bullet:hover {
     transform: scale(1.1);
 }
 
@@ -962,6 +1099,10 @@ btn btn-primary {
 }
 
 #vr_room_fourth:hover {
+    transform: scale(1.1);
+}
+
+#vr_room_second_fourth:hover {
     transform: scale(1.1);
 }
 
@@ -1119,6 +1260,10 @@ btn btn-primary {
     transform: scale(1.1);
 }
 
+#work_place_second_bullet_fifth:hover {
+    transform: scale(1.1);
+}
+
 #work_place_third_bullet_fourth:hover {
     transform: scale(1.1);
 }
@@ -1211,6 +1356,1028 @@ btn btn-primary {
     transform: scale(1.1);
 }
 
+    /* Bullet points popup 1st floor */
+
+#book_bullet_wrapper {
+    position: relative;
+}
+#book_bullet_wrapper .book_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#enter_bullet_wrapper {
+    position: relative;
+}
+#enter_bullet_wrapper .enter_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -165px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#enter_main_bullet_wrapper {
+    position: relative;
+}
+#enter_main_bullet_wrapper .enter_main_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -115px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#cyber_box_room_bullet_wrapper {
+    position: relative;
+}
+#cyber_box_room_bullet_wrapper .cyber_box_room_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -405px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#stock_box_room_bullet_wrapper {
+    position: relative;
+}
+#stock_box_room_bullet_wrapper .stock_box_room_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -385px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#calc_box_room_bullet_wrapper {
+    position: relative;
+}
+#calc_box_room_bullet_wrapper .calc_box_room_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -385px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#calc_box_room_second_bullet_wrapper {
+    position: relative;
+}
+#calc_box_room_second_bullet_wrapper .calc_box_room_second_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -385px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#calc_box_room_third_bullet_wrapper {
+    position: relative;
+}
+#calc_box_room_third_bullet_wrapper .calc_box_room_third_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -385px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#arch_box_room_bullet_wrapper {
+    position: relative;
+}
+#arch_box_room_bullet_wrapper .arch_box_room_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -340px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#volt_box_room_bullet_wrapper {
+    position: relative;
+}
+#volt_box_room_bullet_wrapper .volt_box_room_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -340px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#printing_bullet_wrapper {
+    position: relative;
+}
+#printing_bullet_wrapper .printing_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -260px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#locker_bullet_wrapper {
+    position: relative;
+}
+#locker_bullet_wrapper .locker_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -180px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#reception_bullet_wrapper {
+    position: relative;
+}
+#reception_bullet_wrapper .reception_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -260px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#cafe_bullet_wrapper {
+    position: relative;
+}
+#cafe_bullet_wrapper .cafe_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -260px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#dinner_bullet_wrapper {
+    position: relative;
+}
+#dinner_bullet_wrapper .dinner_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -162px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#pc_bullet_wrapper {
+    position: relative;
+}
+#pc_bullet_wrapper .pc_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -260px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#pc_second_bullet_wrapper {
+    position: relative;
+}
+#pc_second_bullet_wrapper .pc_second_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -260px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#self_service_bullet_wrapper {
+    position: relative;
+}
+#self_service_bullet_wrapper .self_service_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -225px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#self_service_second_bullet_wrapper {
+    position: relative;
+}
+#self_service_second_bullet_wrapper .self_service_second_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -225px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#book_takeout_bullet_wrapper {
+    position: relative;
+}
+#book_takeout_bullet_wrapper .book_takeout_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -185px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#book_takeout_second_bullet_wrapper {
+    position: relative;
+}
+#book_takeout_second_bullet_wrapper .book_takeout_second_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -185px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#box_bullet_wrapper {
+    position: relative;
+}
+#box_bullet_wrapper .box_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -210px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#stairs_bullet_wrapper {
+    position: relative;
+}
+#stairs_bullet_wrapper .stairs_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#stairs_second_floor_bullet_wrapper {
+    position: relative;
+}
+#stairs_second_floor_bullet_wrapper .stairs_second_floor_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -115px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#stairs_second_floor_second_bullet_wrapper {
+    position: relative;
+}
+#stairs_second_floor_second_bullet_wrapper .stairs_second_floor_second_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -115px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#emergency_bullet_wrapper {
+    position: relative;
+}
+#emergency_bullet_wrapper .emergency_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -120px;
+    background-color: orange;
+    display: none;
+}
+
+#emergency_main_bullet_wrapper {
+    position: relative;
+}
+#emergency_main_bullet_wrapper .emergency_main_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -120px;
+    background-color: orange;
+    display: none;
+}
+
+#relax_and_work_zone_wrapper {
+    position: relative;
+}
+#relax_and_work_zone_wrapper .relax_and_work_zone_desc {
+    position: absolute;
+    width: 300px;
+    top: -138px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#work_place_second_bullet_wrapper {
+    position: relative;
+}
+#work_place_second_bullet_wrapper .work_place_second_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -138px;
+    background-color: darkgrey;
+    display: none;
+  }
+
+#relax_zone_bullet_wrapper {
+    position: relative;
+}
+#relax_zone_bullet_wrapper .relax_zone_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -138px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#toilet_bullet_wrapper {
+    position: relative;
+}
+#toilet_bullet_wrapper .toilet_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#elevator_disabled_bullet_wrapper {
+    position: relative;
+}
+#elevator_disabled_bullet_wrapper .elevator_disabled_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -115px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#enter_disabled_bullet_wrapper {
+    position: relative;
+}
+#enter_disabled_bullet_wrapper .enter_disabled_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#toilet_disabled_bullet_wrapper {
+    position: relative;
+}
+#toilet_disabled_bullet_wrapper .toilet_disabled_bullet_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: darkgrey;
+    display: none;
+}
+
+    /* Bullet points popup 1st floor balcony */
+
+#books_bullet_second_wrapper {
+    position: relative;
+}
+#books_bullet_second_wrapper .books_bullet_second_desc {
+    position: absolute;
+    width: 300px;
+    top: -165px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#pc_bullet_second_wrapper {
+    position: relative;
+}
+#pc_bullet_second_wrapper .pc_bullet_second_desc {
+    position: absolute;
+    width: 300px;
+    top: -260px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#work_place_bullet_second_wrapper {
+    position: relative;
+}
+#work_place_bullet_second_wrapper .work_place_bullet_second_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#work_place_second_bullet_second_wrapper {
+    position: relative;
+}
+#work_place_second_bullet_second_wrapper .work_place_second_bullet_second_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#work_place_third_bullet_second_wrapper {
+    position: relative;
+}
+#work_place_third_bullet_second_wrapper .work_place_third_bullet_second_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#work_place_fourth_bullet_second_wrapper {
+    position: relative;
+}
+#work_place_fourth_bullet_second_wrapper .work_place_fourth_bullet_second_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#stairs_bullet_second_wrapper {
+    position: relative;
+}
+#stairs_bullet_second_wrapper .stairs_bullet_second_desc {
+    position: absolute;
+    width: 300px;
+    top: -115px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#stairs_second_floor_bullet_second_wrapper {
+    position: relative;
+}
+
+#stairs_second_floor_bullet_second_wrapper .stairs_second_floor_bullet_second_desc {
+    position: absolute;
+    width: 300px;
+    top: -115px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#stairs_second_floor_second_bullet_second_wrapper {
+    position: relative;
+}
+
+#stairs_second_floor_second_bullet_second_wrapper .stairs_second_floor_second_bullet_second_desc {
+    position: absolute;
+    width: 300px;
+    top: -115px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#elevator_disabled_bullet_second_wrapper {
+    position: relative;
+}
+#elevator_disabled_bullet_second_wrapper .elevator_disabled_bullet_second_desc {
+    position: absolute;
+    width: 300px;
+    top: -115px;
+    background-color: darkgrey;
+    display: none;
+}
+
+    /* Bullet points popup 2nd floor */
+
+#books_bullet_fourth_wrapper {
+    position: relative;
+}
+#books_bullet_fourth_wrapper .books_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -115px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#enter_bullet_fourth_wrapper {
+    position: relative;
+}
+#enter_bullet_fourth_wrapper .enter_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -160px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#engine_box_room_bullet_fourth_wrapper {
+    position: relative;
+}
+#engine_box_room_bullet_fourth_wrapper .engine_box_room_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -385px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#group_room_bullet_fourth_wrapper {
+    position: relative;
+}
+#group_room_bullet_fourth_wrapper .group_room_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -385px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#group_room_second_bullet_fourth_wrapper {
+    position: relative;
+}
+#group_room_second_bullet_fourth_wrapper .group_room_second_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -385px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#group_room_third_bullet_fourth_wrapper {
+    position: relative;
+}
+#group_room_third_bullet_fourth_wrapper .group_room_third_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -385px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#group_room_fourth_bullet_fourth_wrapper {
+    position: relative;
+}
+#group_room_fourth_bullet_fourth_wrapper .group_room_fourth_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -385px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#vr_room_fourth_wrapper {
+    position: relative;
+}
+#vr_room_fourth_wrapper .vr_room_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -385px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#vr_room_second_fourth_wrapper {
+    position: relative;
+}
+#vr_room_second_fourth_wrapper .vr_room_second_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -385px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#work_place_bullet_fourth_wrapper {
+    position: relative;
+}
+#work_place_bullet_fourth_wrapper .work_place_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -385px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#work_place_second_bullet_fourth_wrapper {
+    position: relative;
+}
+#work_place_second_bullet_fourth_wrapper .work_place_second_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -385px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#work_place_second_bullet_fifth_wrapper {
+    position: relative;
+}
+#work_place_second_bullet_fifth_wrapper .work_place_second_bullet_fifth_desc {
+    position: absolute;
+    width: 300px;
+    top: -385px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#projector_bullet_fourth_wrapper {
+    position: relative;
+}
+#projector_bullet_fourth_wrapper .projector_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -345px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#stairs_bullet_fourth_wrapper {
+    position: relative;
+}
+#stairs_bullet_fourth_wrapper .stairs_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -116px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#stairs_second_bullet_fourth_wrapper {
+    position: relative;
+}
+#stairs_second_bullet_fourth_wrapper .stairs_second_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -116px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#stairs_third_bullet_fourth_wrapper {
+    position: relative;
+}
+#stairs_third_bullet_fourth_wrapper .stairs_third_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -116px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#stairs_fourth_bullet_fourth_wrapper {
+    position: relative;
+}
+#stairs_fourth_bullet_fourth_wrapper .stairs_fourth_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -116px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#stairs_fifth_bullet_fourth_wrapper {
+    position: relative;
+}
+#stairs_fifth_bullet_fourth_wrapper .stairs_fifth_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -116px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#emergency_bullet_fourth_wrapper {
+    position: relative;
+}
+#emergency_bullet_fourth_wrapper .emergency_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -116px;
+    background-color: orange;
+    display: none;
+}
+
+#emergency_second_bullet_fourth_wrapper {
+    position: relative;
+}
+#emergency_second_bullet_fourth_wrapper .emergency_second_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -116px;
+    background-color: orange;
+    display: none;
+}
+
+#pc_work_bullet_fourth_wrapper {
+    position: relative;
+}
+#pc_work_bullet_fourth_wrapper .pc_work_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -116px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#relax_zone_bullet_fourth_wrapper {
+    position: relative;
+}
+#relax_zone_bullet_fourth_wrapper .relax_zone_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: darkgrey;
+    display: none;
+  }
+
+#relax_zone_second_bullet_fourth_wrapper {
+    position: relative;
+}
+#relax_zone_second_bullet_fourth_wrapper .relax_zone_second_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#toilet_bullet_fourth_wrapper {
+    position: relative;
+}
+#toilet_bullet_fourth_wrapper .toilet_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -115px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#work_place_third_bullet_fourth_wrapper {
+    position: relative;
+}
+#work_place_third_bullet_fourth_wrapper .work_place_third_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#employe_only_bullet_fourth_wrapper {
+    position: relative;
+}
+#employe_only_bullet_fourth_wrapper .employe_only_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -115px;
+    background-color: darkred;
+    display: none;
+}
+
+#elevator_disabled_bullet_fourth_wrapper {
+    position: relative;
+}
+#elevator_disabled_bullet_fourth_wrapper .elevator_disabled_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -115px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#elevator_disabled_second_bullet_fourth_wrapper {
+    position: relative;
+}
+#elevator_disabled_second_bullet_fourth_wrapper .elevator_disabled_second_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -115px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#toilet_disabled_bullet_fourth_wrapper {
+    position: relative;
+}
+#toilet_disabled_bullet_fourth_wrapper .toilet_disabled_bullet_fourth_desc {
+    position: absolute;
+    width: 300px;
+    top: -115px;
+    background-color: darkgrey;
+    display: none;
+}
+
+    /* Bullet points popup 3rd floor */
+
+#books_bullet_third_wrapper {
+    position: relative;
+}
+#books_bullet_third_wrapper .books_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#books_second_bullet_third_wrapper {
+    position: relative;
+}
+#books_second_bullet_third_wrapper .books_second_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#books_third_bullet_third_wrapper {
+    position: relative;
+}
+#books_third_bullet_third_wrapper .books_third_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#books_fourth_bullet_third_wrapper {
+    position: relative;
+}
+#books_fourth_bullet_third_wrapper .books_fourth_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#books_fifth_bullet_third_wrapper {
+    position: relative;
+}
+#books_fifth_bullet_third_wrapper .books_fifth_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#books_sixth_bullet_third_wrapper {
+    position: relative;
+}
+#books_sixth_bullet_third_wrapper .books_sixth_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#books_seventh_bullet_third_wrapper {
+    position: relative;
+}
+#books_seventh_bullet_third_wrapper .books_seventh_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#projector_bullet_third_wrapper {
+    position: relative;
+}
+#projector_bullet_third_wrapper .projector_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -340px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#pc_bullet_third_wrapper {
+    position: relative;
+}
+#pc_bullet_third_wrapper .pc_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -260px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#stairs_bullet_third_wrapper {
+    position: relative;
+}
+#stairs_bullet_third_wrapper .stairs_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -116px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#stairs_second_floor_bullet_third_wrapper {
+    position: relative;
+}
+#stairs_second_floor_bullet_third_wrapper .stairs_second_floor_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -116px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#stairs_third_floor_bullet_third_wrapper {
+    position: relative;
+}
+#stairs_third_floor_bullet_third_wrapper .stairs_third_floor_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -116px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#stairs_fourth_floor_bullet_third_wrapper {
+    position: relative;
+}
+#stairs_fourth_floor_bullet_third_wrapper .stairs_fourth_floor_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -116px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#emergency_bullet_third_wrapper {
+    position: relative;
+}
+#emergency_bullet_third_wrapper .emergency_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -116px;
+    background-color: orange;
+    display: none;
+}
+
+#work_place_bullet_third_wrapper {
+    position: relative;
+}
+#work_place_bullet_third_wrapper .work_place_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#relax_zone_bullet_third_wrapper {
+    position: relative;
+}
+#relax_zone_bullet_third_wrapper .relax_zone_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#relax_zone_second_bullet_third_wrapper {
+    position: relative;
+}
+#relax_zone_second_bullet_third_wrapper .relax_zone_second_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    background-color: darkgrey;
+    display: none;
+}
+
+#employe_only_bullet_third_wrapper {
+    position: relative;
+}
+#employe_only_bullet_third_wrapper .employe_only_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -116px;
+    background-color: darkred;
+    display: none;
+}
+
+#elevator_disabled_bullet_third_wrapper {
+    position: relative;
+}
+#elevator_disabled_bullet_third_wrapper .elevator_disabled_bullet_third_desc {
+    position: absolute;
+    width: 300px;
+    top: -116px;
+    background-color: darkgrey;
+    display: none;
+}
+
 @media  screen and (max-width: 2110px) {
 
     /* Media bullet points 1st floor */
@@ -1281,6 +2448,16 @@ btn btn-primary {
 
     #calc_box_room_bullet {
         left: 400px;
+        top: 120px;
+    }
+
+    #calc_box_room_second_bullet {
+        left: 525px;
+        top: 120px;
+    }
+
+    #calc_box_room_third_bullet {
+        left: 630px;
         top: 120px;
     }
 
@@ -1523,6 +2700,11 @@ btn btn-primary {
         top: 150px;
     }
 
+    #vr_room_second_fourth {
+        left: 369px;
+        top: 150px;
+    }
+
     #emergency_bullet_fourth {
         left: 760px;
         top: 490px;
@@ -1540,6 +2722,11 @@ btn btn-primary {
 
     #work_place_second_bullet_fourth {
         left: 491px;
+        top: 70px;
+    }
+
+    #work_place_second_bullet_fifth {
+        left: 655px;
         top: 70px;
     }
 
