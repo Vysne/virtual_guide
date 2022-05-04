@@ -169,6 +169,7 @@ btn btn-primary {
     top: 330px;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 98;
 }
 
 #pc_second_bullet {
@@ -211,6 +212,7 @@ btn btn-primary {
     top: 454px;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 99;
 }
 
 #box_bullet {
@@ -1397,7 +1399,7 @@ btn btn-primary {
 #cyber_box_room_bullet_wrapper .cyber_box_room_bullet_desc {
     position: absolute;
     width: 300px;
-    top: -405px;
+    top: -370px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1408,7 +1410,7 @@ btn btn-primary {
 #stock_box_room_bullet_wrapper .stock_box_room_bullet_desc {
     position: absolute;
     width: 300px;
-    top: -385px;
+    top: -350px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1419,7 +1421,7 @@ btn btn-primary {
 #calc_box_room_bullet_wrapper .calc_box_room_bullet_desc {
     position: absolute;
     width: 300px;
-    top: -385px;
+    top: -350px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1452,7 +1454,7 @@ btn btn-primary {
 #arch_box_room_bullet_wrapper .arch_box_room_bullet_desc {
     position: absolute;
     width: 300px;
-    top: -340px;
+    top: -310px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1463,7 +1465,7 @@ btn btn-primary {
 #volt_box_room_bullet_wrapper .volt_box_room_bullet_desc {
     position: absolute;
     width: 300px;
-    top: -340px;
+    top: -310px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1507,7 +1509,7 @@ btn btn-primary {
 #cafe_bullet_wrapper .cafe_bullet_desc {
     position: absolute;
     width: 300px;
-    top: -260px;
+    top: -60px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1529,7 +1531,7 @@ btn btn-primary {
 #pc_bullet_wrapper .pc_bullet_desc {
     position: absolute;
     width: 300px;
-    top: -260px;
+    top: -290px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1540,7 +1542,7 @@ btn btn-primary {
 #pc_second_bullet_wrapper .pc_second_bullet_desc {
     position: absolute;
     width: 300px;
-    top: -260px;
+    top: -290px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1584,7 +1586,7 @@ btn btn-primary {
 #book_takeout_second_bullet_wrapper .book_takeout_second_bullet_desc {
     position: absolute;
     width: 300px;
-    top: -185px;
+    top: -260px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1751,7 +1753,7 @@ btn btn-primary {
 #pc_bullet_second_wrapper .pc_bullet_second_desc {
     position: absolute;
     width: 300px;
-    top: -260px;
+    top: -290px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1876,7 +1878,7 @@ btn btn-primary {
 #engine_box_room_bullet_fourth_wrapper .engine_box_room_bullet_fourth_desc {
     position: absolute;
     width: 300px;
-    top: -385px;
+    top: -350px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1887,7 +1889,7 @@ btn btn-primary {
 #group_room_bullet_fourth_wrapper .group_room_bullet_fourth_desc {
     position: absolute;
     width: 300px;
-    top: -385px;
+    top: -350px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1898,7 +1900,7 @@ btn btn-primary {
 #group_room_second_bullet_fourth_wrapper .group_room_second_bullet_fourth_desc {
     position: absolute;
     width: 300px;
-    top: -385px;
+    top: -350px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1909,7 +1911,7 @@ btn btn-primary {
 #group_room_third_bullet_fourth_wrapper .group_room_third_bullet_fourth_desc {
     position: absolute;
     width: 300px;
-    top: -385px;
+    top: -350px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1920,7 +1922,7 @@ btn btn-primary {
 #group_room_fourth_bullet_fourth_wrapper .group_room_fourth_bullet_fourth_desc {
     position: absolute;
     width: 300px;
-    top: -385px;
+    top: -350px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1931,7 +1933,7 @@ btn btn-primary {
 #vr_room_fourth_wrapper .vr_room_fourth_desc {
     position: absolute;
     width: 300px;
-    top: -385px;
+    top: -350px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1942,7 +1944,7 @@ btn btn-primary {
 #vr_room_second_fourth_wrapper .vr_room_second_fourth_desc {
     position: absolute;
     width: 300px;
-    top: -385px;
+    top: -350px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1953,7 +1955,7 @@ btn btn-primary {
 #work_place_bullet_fourth_wrapper .work_place_bullet_fourth_desc {
     position: absolute;
     width: 300px;
-    top: -385px;
+    top: -350px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1964,7 +1966,7 @@ btn btn-primary {
 #work_place_second_bullet_fourth_wrapper .work_place_second_bullet_fourth_desc {
     position: absolute;
     width: 300px;
-    top: -385px;
+    top: -350px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1975,7 +1977,7 @@ btn btn-primary {
 #work_place_second_bullet_fifth_wrapper .work_place_second_bullet_fifth_desc {
     position: absolute;
     width: 300px;
-    top: -385px;
+    top: -350px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -1986,7 +1988,7 @@ btn btn-primary {
 #projector_bullet_fourth_wrapper .projector_bullet_fourth_desc {
     position: absolute;
     width: 300px;
-    top: -345px;
+    top: -305px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -2252,7 +2254,7 @@ btn btn-primary {
 #projector_bullet_third_wrapper .projector_bullet_third_desc {
     position: absolute;
     width: 300px;
-    top: -340px;
+    top: -310px;
     background-color: cornflowerblue;
     display: none;
 }
@@ -2263,7 +2265,7 @@ btn btn-primary {
 #pc_bullet_third_wrapper .pc_bullet_third_desc {
     position: absolute;
     width: 300px;
-    top: -260px;
+    top: -290px;
     background-color: cornflowerblue;
     display: none;
 }

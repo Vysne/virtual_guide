@@ -109,12 +109,10 @@ filterSelect.addEventListener('change', (event) => {
 });
 
 const bulletPoints = document.querySelectorAll('#plan_bullets > div img');
-console.log(bulletPoints);
 
 bulletPoints.forEach((bulletPoint) => {
     bulletPoint.addEventListener('click', (event) => {
         const bulletPointDesc = bulletPoint.nextElementSibling;
-        console.log(bulletPointDesc);
         let displayStatus = bulletPointDesc.style.display;
         if(displayStatus != 'block') {
             bulletPointDesc.style.display = 'block';

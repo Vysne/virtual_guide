@@ -72,14 +72,14 @@
                 <div class="big_select">
                     <select onchange="window.location.href=this.options[this.selectedIndex].value;" class="form-select form-select-lg mb-3 p-3" aria-label=".form-select-lg example">
                         <option>Education type</option>
-                        <option value="{{ route('third_floor_en') }}">Science and Knowledge, management and computer science</option>
-                        <option value="{{ route('third_floor_en') }}">Philosophy and psychology</option>
-                        <option value="{{ route('third_floor_en') }}">Social sciences</option>
-                        <option value="{{ route('third_floor_en') }}">Mathematics and natural sciences</option>
-                        <option value="{{ route('first_floor_en') }}">Applied sciences, medicine and technology</option>
-                        <option value="{{ route('third_floor_en') }}">The arts, entertainment and sport</option>
-                        <option value="{{ route('third_floor_en') }}">Language and linguistics</option>
-                        <option value="{{ route('third_floor_en') }}">Geography, biography and history</option>
+                        <option value="{{ route('third_floor_en') }}">Science and Knowledge, management and computer science (0)</option>
+                        <option value="{{ route('third_floor_en') }}">Philosophy and psychology (1)</option>
+                        <option value="{{ route('third_floor_en') }}">Social sciences (3)</option>
+                        <option value="{{ route('third_floor_en') }}">Mathematics and natural sciences (5)</option>
+                        <option value="{{ route('first_floor_en') }}">Applied sciences, medicine and technology (6)</option>
+                        <option value="{{ route('third_floor_en') }}">The arts, entertainment and sport (7)</option>
+                        <option value="{{ route('third_floor_en') }}">Language and linguistics (8)</option>
+                        <option value="{{ route('third_floor_en') }}">Geography, biography and history (9)</option>
                     </select>
                 </div>
             </div>

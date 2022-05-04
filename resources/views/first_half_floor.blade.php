@@ -72,14 +72,14 @@
                 <div class="big_select">
                     <select onchange="window.location.href=this.options[this.selectedIndex].value;" class="form-select form-select-lg mb-3 p-3" aria-label=".form-select-lg example">
                         <option>Mokslo šaka</option>
-                        <option value="{{ route('third_floor') }}">Mokslas ir žinios, vadyba, kompiuterija</option>
-                        <option value="{{ route('third_floor') }}">Filosofija ir psichologija</option>
-                        <option value="{{ route('third_floor') }}">Socialiniai mokslai</option>
-                        <option value="{{ route('third_floor') }}">Matematika ir gamtos mokslai</option>
-                        <option value="{{ route('first_floor') }}">Taikomieji mokslai, medicina ir technologija</option>
-                        <option value="{{ route('third_floor') }}">Menas, pramogos ir sportas</option>
-                        <option value="{{ route('third_floor') }}">Kalba ir kalbotyra</option>
-                        <option value="{{ route('third_floor') }}">Geografija, biografija ir istorija</option>
+                        <option value="{{ route('third_floor') }}">Mokslas ir žinios, vadyba, kompiuterija (0)</option>
+                        <option value="{{ route('third_floor') }}">Filosofija ir psichologija (1)</option>
+                        <option value="{{ route('third_floor') }}">Socialiniai mokslai (3)</option>
+                        <option value="{{ route('third_floor') }}">Matematika ir gamtos mokslai (5)</option>
+                        <option value="{{ route('first_floor') }}">Taikomieji mokslai, medicina ir technologija (6)</option>
+                        <option value="{{ route('third_floor') }}">Menas, pramogos ir sportas (7)</option>
+                        <option value="{{ route('third_floor') }}">Kalba ir kalbotyra (8)</option>
+                        <option value="{{ route('third_floor') }}">Geografija, biografija ir istorija (9)</option>
                     </select>
                 </div>
             </div>

@@ -75,14 +75,14 @@
                 <div class="big_select">
                     <select onchange="window.location.href=this.options[this.selectedIndex].value;" class="form-select form-select-lg mb-3 p-3" aria-label=".form-select-lg example">
                         <option>Education type</option>
-                        <option value="{{ route('third_floor_en') }}">Science and Knowledge, management and computer science</option>
-                        <option value="{{ route('third_floor_en') }}">Philosophy and psychology</option>
-                        <option value="{{ route('third_floor_en') }}">Social sciences</option>
-                        <option value="{{ route('third_floor_en') }}">Mathematics and natural sciences</option>
-                        <option value="{{ route('first_floor_en') }}">Applied sciences, medicine and technology</option>
-                        <option value="{{ route('third_floor_en') }}">The arts, entertainment and sport</option>
-                        <option value="{{ route('third_floor_en') }}">Language and linguistics</option>
-                        <option value="{{ route('third_floor_en') }}">Geography, biography and history</option>
+                        <option value="{{ route('third_floor_en') }}">Science and Knowledge, management and computer science (0)</option>
+                        <option value="{{ route('third_floor_en') }}">Philosophy and psychology (1)</option>
+                        <option value="{{ route('third_floor_en') }}">Social sciences (3)</option>
+                        <option value="{{ route('third_floor_en') }}">Mathematics and natural sciences (5)</option>
+                        <option value="{{ route('first_floor_en') }}">Applied sciences, medicine and technology (6)</option>
+                        <option value="{{ route('third_floor_en') }}">The arts, entertainment and sport (7)</option>
+                        <option value="{{ route('third_floor_en') }}">Language and linguistics (8)</option>
+                        <option value="{{ route('third_floor_en') }}">Geography, biography and history (9)</option>
                     </select>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                     <div data-filter="books">
                         <div id="books_bullet" title="Book shelves">
                             <div id="book_bullet_wrapper">
-                                <img src="assets/books_pointer.png">
+                                <img src="assets/books_pointer6.png">
                                 <div class="book_bullet_desc">
                                     <h4 class="title">{{$pointers[22]->name}}</h4>
                                     <div class="info">
@@ -372,11 +372,13 @@
                             </div>
                             <div id="book_takeout_second_bullet" title="Book takeout station">
                                 <div id="book_takeout_second_bullet_wrapper">
-                                    <img src="assets/book_takeout_pointer.png">
+                                    <img src="assets/printing_pointer.png">
                                     <div class="book_takeout_second_bullet_desc">
-                                        <h4 class="title">{{$pointers[49]->name}}</h4>
+                                        <h4 class="title">{{$pointers[4]->name}}</h4>
                                         <div class="info">
-                                            <p>{{$pointers[49]->comment}}</p>
+                                            <p>{{$pointers[4]->comment}}</p>
+                                            <p>{{$pointers[4]->main_email}}</p>
+                                            <button id="redirect_print" class="pc_button" style="font-size: 0.9rem">Services</button>
                                         </div>
                                     </div>
                                 </div>

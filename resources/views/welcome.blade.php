@@ -75,14 +75,14 @@
                             <div class="big_select">
                                 <select onchange="window.location.href=this.options[this.selectedIndex].value;" class="form-select form-select-lg mb-3 p-3" aria-label=".form-select-lg example">
                                     <option>Mokslo šaka</option>
-                                    <option value="{{ route('third_floor') }}">Mokslas ir žinios, vadyba, kompiuterija</option>
-                                    <option value="{{ route('third_floor') }}">Filosofija ir psichologija</option>
-                                    <option value="{{ route('third_floor') }}">Socialiniai mokslai</option>
-                                    <option value="{{ route('third_floor') }}">Matematika ir gamtos mokslai</option>
-                                    <option value="{{ route('first_floor') }}">Taikomieji mokslai, medicina ir technologija</option>
-                                    <option value="{{ route('third_floor') }}">Menas, pramogos ir sportas</option>
-                                    <option value="{{ route('third_floor') }}">Kalba ir kalbotyra</option>
-                                    <option value="{{ route('third_floor') }}">Geografija, biografija ir istorija</option>
+                                    <option value="{{ route('third_floor') }}">Mokslas ir žinios, vadyba, kompiuterija (0)</option>
+                                    <option value="{{ route('third_floor') }}">Filosofija ir psichologija (1)</option>
+                                    <option value="{{ route('third_floor') }}">Socialiniai mokslai (3)</option>
+                                    <option value="{{ route('third_floor') }}">Matematika ir gamtos mokslai (5)</option>
+                                    <option value="{{ route('first_floor') }}">Taikomieji mokslai, medicina ir technologija (6)</option>
+                                    <option value="{{ route('third_floor') }}">Menas, pramogos ir sportas (7)</option>
+                                    <option value="{{ route('third_floor') }}">Kalba ir kalbotyra (8)</option>
+                                    <option value="{{ route('third_floor') }}">Geografija, biografija ir istorija (9)</option>
                                 </select>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                                 <div data-filter="books">
                                     <div id="books_bullet" title="Book shelves">
                                         <div id="book_bullet_wrapper">
-                                            <img src="assets/books_pointer.png">
+                                            <img src="assets/books_pointer6.png">
                                             <div class="book_bullet_desc">
                                                 <h4 class="title">{{$pointers[22]->name}}</h4>
                                                 <div class="info">
@@ -254,6 +254,20 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div id="book_takeout_second_bullet" title="Book takeout station">
+                                            <div id="book_takeout_second_bullet_wrapper">
+                                                <img src="assets/printing_pointer.png">
+                                                <div class="book_takeout_second_bullet_desc">
+                                                    <h4 class="title">{{$pointers[4]->name}}</h4>
+                                                    <div class="info">
+                                                        <p>{{$pointers[4]->comment}}</p>
+                                                        <p>{{$pointers[4]->main_email}}</p>
+                                                        <button id="redirect_print" class="pc_button" style="font-size: 0.9rem">Paslaugos</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div id="redirect_pc">
                                         <div id="locker_bullet" title="Lockers">
                                             <div id="locker_bullet_wrapper">
@@ -286,12 +300,12 @@
                                                 <img src="assets/dinner_pointer.png">
                                                 <div class="cafe_bullet_desc">
                                                     <h4 class="title">{{$pointers[2]->name}}</h4>
-                                                    <div class="info">
-                                                        <p>{{$pointers[2]->comment}}</p>
-                                                        <p>{{$pointers[2]->phone_number}}</p>
-                                                        <p>{{$pointers[2]->main_email}}</p>
-                                                        <p>{{$pointers[2]->work_hours}}</p>
-                                                    </div>
+{{--                                                    <div class="info">--}}
+{{--                                                        <p>{{$pointers[2]->comment}}</p>--}}
+{{--                                                        <p>{{$pointers[2]->phone_number}}</p>--}}
+{{--                                                        <p>{{$pointers[2]->main_email}}</p>--}}
+{{--                                                        <p>{{$pointers[2]->work_hours}}</p>--}}
+{{--                                                    </div>--}}
                                                 </div>
                                             </div>
                                         </div>
@@ -362,17 +376,6 @@
                                             <div id="book_takeout_bullet_wrapper">
                                                 <img src="assets/book_takeout_pointer.png">
                                                 <div class="book_takeout_bullet_desc">
-                                                    <h4 class="title">{{$pointers[49]->name}}</h4>
-                                                    <div class="info">
-                                                        <p>{{$pointers[49]->comment}}</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="book_takeout_second_bullet" title="Book takeout station">
-                                            <div id="book_takeout_second_bullet_wrapper">
-                                                <img src="assets/book_takeout_pointer.png">
-                                                <div class="book_takeout_second_bullet_desc">
                                                     <h4 class="title">{{$pointers[49]->name}}</h4>
                                                     <div class="info">
                                                         <p>{{$pointers[49]->comment}}</p>

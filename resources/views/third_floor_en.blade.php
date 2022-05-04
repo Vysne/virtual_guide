@@ -74,14 +74,14 @@
                 <div class="big_select">
                     <select onchange="window.location.href=this.options[this.selectedIndex].value;" class="form-select form-select-lg mb-3 p-3" aria-label=".form-select-lg example">
                         <option>Education type</option>
-                        <option value="{{ route('third_floor_en') }}">Science and Knowledge, management and computer science</option>
-                        <option value="{{ route('third_floor_en') }}">Philosophy and psychology</option>
-                        <option value="{{ route('third_floor_en') }}">Social sciences</option>
-                        <option value="{{ route('third_floor_en') }}">Mathematics and natural sciences</option>
-                        <option value="{{ route('first_floor_en') }}">Applied sciences, medicine and technology</option>
-                        <option value="{{ route('third_floor_en') }}">The arts, entertainment and sport</option>
-                        <option value="{{ route('third_floor_en') }}">Language and linguistics</option>
-                        <option value="{{ route('third_floor_en') }}">Geography, biography and history</option>
+                        <option value="{{ route('third_floor_en') }}">Science and Knowledge, management and computer science (0)</option>
+                        <option value="{{ route('third_floor_en') }}">Philosophy and psychology (1)</option>
+                        <option value="{{ route('third_floor_en') }}">Social sciences (3)</option>
+                        <option value="{{ route('third_floor_en') }}">Mathematics and natural sciences (5)</option>
+                        <option value="{{ route('first_floor_en') }}">Applied sciences, medicine and technology (6)</option>
+                        <option value="{{ route('third_floor_en') }}">The arts, entertainment and sport (7)</option>
+                        <option value="{{ route('third_floor_en') }}">Language and linguistics (8)</option>
+                        <option value="{{ route('third_floor_en') }}">Geography, biography and history (9)</option>
                     </select>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                     <div data-filter="books">
                         <div id="books_bullet_third" title="Book shelves">
                             <div id="books_bullet_third_wrapper">
-                                <img src="assets/books_pointer.png">
+                                <img src="assets/books_pointer0.png">
                                 <div class="books_bullet_third_desc">
                                     <h4 class="title">{{$pointers[28]->name}}</h4>
                                     <div class="info">
@@ -104,7 +104,7 @@
                         </div>
                         <div id="books_second_bullet_third" title="Book shelves">
                             <div id="books_second_bullet_third_wrapper">
-                                <img src="assets/books_pointer.png">
+                                <img src="assets/books_pointer1.png">
                                 <div class="books_second_bullet_third_desc">
                                     <h4 class="title">{{$pointers[29]->name}}</h4>
                                     <div class="info">
@@ -115,7 +115,7 @@
                         </div>
                         <div id="books_third_bullet_third" title="Book shelves">
                             <div id="books_third_bullet_third_wrapper">
-                                <img src="assets/books_pointer.png">
+                                <img src="assets/books_pointer3.png">
                                 <div class="books_third_bullet_third_desc">
                                     <h4 class="title">{{$pointers[34]->name}}</h4>
                                     <div class="info">
@@ -126,7 +126,7 @@
                         </div>
                         <div id="books_fourth_bullet_third" title="Book shelves">
                             <div id="books_fourth_bullet_third_wrapper">
-                                <img src="assets/books_pointer.png">
+                                <img src="assets/books_pointer5.png">
                                 <div class="books_fourth_bullet_third_desc">
                                     <h4 class="title">{{$pointers[35]->name}}</h4>
                                     <div class="info">
@@ -137,7 +137,7 @@
                         </div>
                         <div id="books_fifth_bullet_third" title="Book shelves">
                             <div id="books_fifth_bullet_third_wrapper">
-                                <img src="assets/books_pointer.png">
+                                <img src="assets/books_pointer7.png">
                                 <div class="books_fifth_bullet_third_desc">
                                     <h4 class="title">{{$pointers[36]->name}}</h4>
                                     <div class="info">
@@ -148,7 +148,7 @@
                         </div>
                         <div id="books_sixth_bullet_third" title="Book shelves">
                             <div id="books_sixth_bullet_third_wrapper">
-                                <img src="assets/books_pointer.png">
+                                <img src="assets/books_pointer8.png">
                                 <div class="books_sixth_bullet_third_desc">
                                     <h4 class="title">{{$pointers[47]->name}}</h4>
                                     <div class="info">
@@ -159,7 +159,7 @@
                         </div>
                         <div id="books_seventh_bullet_third" title="Book shelves">
                             <div id="books_seventh_bullet_third_wrapper">
-                                <img src="assets/books_pointer.png">
+                                <img src="assets/books_pointer9.png">
                                 <div class="books_seventh_bullet_third_desc">
                                     <h4 class="title">{{$pointers[48]->name}}</h4>
                                     <div class="info">
