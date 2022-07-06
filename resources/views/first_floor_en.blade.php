@@ -287,12 +287,12 @@
                                     <img src="assets/dinner_pointer.png">
                                     <div class="cafe_bullet_desc">
                                         <h4 class="title">{{$pointers[2]->name}}</h4>
-                                        <div class="info">
-                                            <p>{{$pointers[2]->comment}}</p>
-                                            <p>{{$pointers[2]->phone_number}}</p>
-                                            <p>{{$pointers[2]->main_email}}</p>
-                                            <p>{{$pointers[2]->work_hours}}</p>
-                                        </div>
+{{--                                        <div class="info">--}}
+{{--                                            <p>{{$pointers[2]->comment}}</p>--}}
+{{--                                            <p>{{$pointers[2]->phone_number}}</p>--}}
+{{--                                            <p>{{$pointers[2]->main_email}}</p>--}}
+{{--                                            <p>{{$pointers[2]->work_hours}}</p>--}}
+{{--                                        </div>--}}
                                     </div>
                                 </div>
                             </div>
