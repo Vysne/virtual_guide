@@ -51,4 +51,5 @@ Route::controller(FloorController::class)->group(function (){
     Route::get('second_floor_en', 'getSecondFloorPageEN')->name('second_floor_en');
 
     Route::get('third_floor_en', 'getThirdFloorPageEN')->name('third_floor_en');
+
 });
